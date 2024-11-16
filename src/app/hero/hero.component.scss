@@ -3,6 +3,60 @@
     background-size: cover; // Use "contain" if you want the entire image to be visible within the viewport
     background-position: center;
     background-repeat: no-repeat;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    app-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        width: 100%; // Ensures the header spans the container width
+        padding: 35px 70px 0px 70px;
+        box-sizing: border-box;
+        background-image: linear-gradient(to bottom, rgba(0,0,0, 0.5), transparent);      
+        justify-content: space-between;
+        height: 100px;
+    }
+
+    h2 {
+        font-size: 40px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    h1 {
+        font-family: "Karla";
+        font-size: 128px;
+        font-weight: 700;
+        text-align: center;
+
+    }
+  }
+
+  .hero-btns {
+    display: flex;
+    gap: 48px;
+    margin-top: 40px;
+  }
+
+  .hero-btn {
+    border-radius: 100px;
+    border: 1px solid #FFFF;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+
+    p {
+        font-family: "Karla";
+        font-size: 18px;
+        font-weight: 400;
+    }
   }

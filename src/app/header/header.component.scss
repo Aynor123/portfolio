@@ -1,0 +1,17 @@
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.header-left,
+.header-right,
+.header-menu {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+}
