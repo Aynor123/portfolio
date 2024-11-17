@@ -1,22 +1,22 @@
 <div class="header-left">
-    <img src="\assets\header\Property 1=Default hover.png">
+    <img class="language-toggle" id="language-toggle" src="\assets\header\Property 1=Default hover.png">
     <div class="header-menu">
-        <div>
+        <div class="button" [ngClass]="{'active': activeMenuButton === 'about'}" (click)="setActive('about')">
             <p>About me</p>
             <div class="height-15 d-flex jc-center">
-                <img src="\assets\header\radio_button_unchecked.png">
+                <img class="radio-btn" src="\assets\header\radio_button_unchecked.png">
             </div>
         </div>
-        <div>
+        <div class="button" [ngClass]="{'active': activeMenuButton === 'skills'}" (click)="setActive('skills')">
             <p>Skills</p>
             <div class="height-15 d-flex jc-center">
-                <img src="\assets\header\radio_button_unchecked.png">
+                <img class="radio-btn" src="\assets\header\radio_button_unchecked.png">
             </div>
         </div>
-        <div>
+        <div class="button" [ngClass]="{'active': activeMenuButton === 'projects'}" (click)="setActive('projects')">
             <p>Projects</p>
             <div class="height-15 d-flex jc-center">
-                <img src="\assets\header\radio_button_unchecked.png">
+                <img class="radio-btn" src="\assets\header\radio_button_unchecked.png">
             </div>
         </div>
     </div>

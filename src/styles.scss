@@ -30,6 +30,7 @@
 
 html { //evtl ", body" hinzufügen, wenn cursor sahdow scrollbehavior auslöst
     overflow: auto;
+    scroll-behavior: smooth;
     /* Allow scrolling for the page */
 }
 
@@ -42,8 +43,8 @@ body {
     .cursor-shadow {
         position: absolute;
         pointer-events: none;
-        width: 200px; // Adjust size as needed
-        height: 200px; // Adjust size as needed
+        width: 125px; // Adjust size as needed
+        height: 125px; // Adjust size as needed
         background-image: url('/assets/cursor/Ellipse 5.png');
         background-size: contain;
         background-repeat: no-repeat;

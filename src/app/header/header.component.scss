@@ -9,9 +9,40 @@
     display: flex;
     align-items: flex-start;
     gap: 50px;
+
+    .button {
+        cursor: pointer;
+
+        &.active p {
+            color: #3DCFB6; 
+            transition: color 175ms ease-in-out; 
+        }
+
+        &.active .radio-btn {
+            opacity: 1;
+        }
+
+        .radio-btn {
+            width: 9px; 
+            height: 9px;
+            opacity: 0; 
+            transition: opacity 175ms ease-in-out;
+        }
+
+        &:hover {
+            .radio-btn {
+                opacity: 1; 
+            }
+        }
+    }
 }
 
 p {
     font-size: 20px;
     font-weight: 400;
+    transition: color 175ms ease-in-out; 
+}
+
+.height-15 {
+    height: 15px;
 }
