@@ -1,19 +1,19 @@
 <div class="header-left">
     <img class="language-toggle" id="language-toggle" src="\assets\header\Property 1=Default hover.png">
     <div class="header-menu">
-        <div class="button" [ngClass]="{'active': activeMenuButton === 'about'}" (click)="setActive('about')">
+        <div class="button" [ngClass]="{'active': activeMenuButton === 'about'}" (click)="setActive('about')" (click)="navigateTo('about')">
             <p>About me</p>
             <div class="height-15 d-flex jc-center">
                 <img class="radio-btn" src="\assets\header\radio_button_unchecked.png">
             </div>
         </div>
-        <div class="button" [ngClass]="{'active': activeMenuButton === 'skills'}" (click)="setActive('skills')">
+        <div class="button" [ngClass]="{'active': activeMenuButton === 'skills'}" (click)="setActive('skills')" (click)="navigateTo('skills')">
             <p>Skills</p>
             <div class="height-15 d-flex jc-center">
                 <img class="radio-btn" src="\assets\header\radio_button_unchecked.png">
             </div>
         </div>
-        <div class="button" [ngClass]="{'active': activeMenuButton === 'projects'}" (click)="setActive('projects')">
+        <div class="button" [ngClass]="{'active': activeMenuButton === 'projects'}" (click)="setActive('projects')" (click)="navigateTo('portfolio')">
             <p>Projects</p>
             <div class="height-15 d-flex jc-center">
                 <img class="radio-btn" src="\assets\header\radio_button_unchecked.png">
